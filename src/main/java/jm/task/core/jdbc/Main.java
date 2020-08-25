@@ -1,5 +1,6 @@
 package jm.task.core.jdbc;
 
+import jm.task.core.jdbc.dao.UserDaoHibernateImpl;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
@@ -12,6 +13,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.metadata.ClassMetadata;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 public class Main {
@@ -67,12 +69,15 @@ public class Main {
                 final Query query = session.createQuery("from " + entityName);
                 System.out.println("executing: " + query.getQueryString());
                 for (Object o : query.list()) {
-                    System.out.println("  " + o);
+                    System.out.println("Viewing entity " + o);
                 }
             }
         } finally {
             session.close();
         }
+        UserDaoHibernateImpl dao = new UserDaoHibernateImpl();
+        List<User> userList = dao.getAllUsers();
+        System.out.println("Users size " + userList.size());
         // HIBERNATE}
     }
 }

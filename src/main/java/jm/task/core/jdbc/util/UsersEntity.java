@@ -73,4 +73,14 @@ public class UsersEntity {
         result = 31 * result + (age != null ? age.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "UsersEntity{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
