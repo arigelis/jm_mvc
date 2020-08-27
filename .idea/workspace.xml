@@ -3,16 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a6b715cd-a020-45ee-b41a-b7831f7a0eeb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskJDBC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TaskJDBC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/UsersEntity.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/service/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/util/Util.class" afterDir="false" />
     </list>
@@ -147,8 +147,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="45" />
-          <entry key="properties" value="3" />
+          <entry key="java" value="68" />
+          <entry key="properties" value="5" />
           <entry key="users" value="1" />
           <entry key="xml" value="5" />
         </counts>
@@ -157,24 +157,24 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="Database Element" value="1" />
-          <entry key="JAVA" value="45" />
-          <entry key="Properties" value="3" />
+          <entry key="JAVA" value="68" />
+          <entry key="Properties" value="5" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="690" />
-          <entry key="properties" value="19" />
+          <entry key="java" value="890" />
+          <entry key="properties" value="21" />
           <entry key="txt" value="33" />
           <entry key="xml" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="690" />
+          <entry key="JAVA" value="890" />
           <entry key="PLAIN_TEXT" value="33" />
-          <entry key="Properties" value="19" />
+          <entry key="Properties" value="21" />
           <entry key="XML" value="29" />
         </counts>
       </usages-collector>
@@ -183,22 +183,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
+            <state relative-caret-position="138">
+              <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#474#475#0" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#678#679#0" expanded="true" />
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#834#835#0" expanded="true" />
+                <element signature="e#873#874#0" expanded="true" />
+                <element signature="e#926#927#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/UserServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1198">
-              <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -206,17 +205,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="182">
+              <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/UserServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="72" column="19" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="74" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="194">
+              <caret line="27" column="20" selection-start-line="22" selection-start-column="21" selection-end-line="27" selection-end-column="20" />
+              <folding>
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#534#535#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -224,69 +239,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#527#528#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#833#834#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#927#928#0" expanded="true" />
-                <element signature="e#963#964#0" expanded="true" />
-                <element signature="e#993#994#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/UsersEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            <state relative-caret-position="206">
+              <caret line="81" column="27" lean-forward="true" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#270#271#0" expanded="true" />
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#409#410#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#703#704#0" expanded="true" />
-                <element signature="e#742#743#0" expanded="true" />
-                <element signature="e#790#791#0" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
+                <element signature="e#1497#1498#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -295,8 +252,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="138">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -322,6 +282,10 @@
       <find>properties</find>
       <find>hibernate.confi</find>
       <find>hibernate.cfg.xml</find>
+      <find>useSSL=fal`</find>
+      <find>UserEntity</find>
+      <find>getLastName</find>
+      <find>create table</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -341,21 +305,21 @@
         <option value="$PROJECT_DIR$/config.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/UserServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/UsersEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/UsersEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" />
+        <option value="$PROJECT_DIR$/src/test/java/UserServiceTest.java" />
       </list>
     </option>
   </component>
@@ -866,9 +830,10 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="JPA.DatabaseSchemaImportDialog" value="c45be1a5-447b-4bf2-a0df-6eea3c018ca8" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/java/jm_mvc/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1598526655531" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1598531198414" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../jdbc_only" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -905,24 +870,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jm.task.core.jdbc.Main" />
-      <module name="TaskJDBC" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jm.task.core.jdbc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserServiceTest.getAllUsers">
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskJDBC" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.cleanUsersTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaskJDBC" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
+      <option name="METHOD_NAME" value="cleanUsersTable" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -937,40 +899,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.dropUsersTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.getAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskJDBC" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
-      <option name="METHOD_NAME" value="dropUsersTable" />
+      <option name="METHOD_NAME" value="getAllUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.removeUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.saveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TaskJDBC" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserServiceTest" />
-      <option name="METHOD_NAME" value="removeUserById" />
+      <option name="METHOD_NAME" value="saveUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserServiceTest.dropUsersTable" />
       <item itemvalue="JUnit.UserServiceTest" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.UserServiceTest.removeUserById" />
       <item itemvalue="JUnit.UserServiceTest.createUsersTable" />
+      <item itemvalue="JUnit.UserServiceTest.saveUser" />
+      <item itemvalue="JUnit.UserServiceTest.cleanUsersTable" />
+      <item itemvalue="JUnit.UserServiceTest.getAllUsers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.getAllUsers" />
+        <item itemvalue="JUnit.UserServiceTest.saveUser" />
         <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserServiceTest.cleanUsersTable" />
         <item itemvalue="JUnit.UserServiceTest.createUsersTable" />
-        <item itemvalue="JUnit.UserServiceTest.removeUserById" />
-        <item itemvalue="JUnit.UserServiceTest.dropUsersTable" />
       </list>
     </recent_temporary>
   </component>
@@ -997,7 +959,7 @@
       <workItem from="1598246259716" duration="321000" />
       <workItem from="1598353093673" duration="3668000" />
       <workItem from="1598419824851" duration="1946000" />
-      <workItem from="1598523019503" duration="3585000" />
+      <workItem from="1598523019503" duration="8115000" />
     </task>
     <task id="LOCAL-00001" summary="adding taskJDBC into pre-project empty repo">
       <created>1598180313727</created>
@@ -1027,49 +989,56 @@
       <option name="project" value="LOCAL" />
       <updated>1598357710954</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="correct hiber+jdbc">
+      <created>1598526676717</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598526676717</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserServiceTest_saveUser - 2020.08.24 at 09h 45m 11s.xml">
+    <history-entry file="UserServiceTest_cleanUsersTable - 2020.08.27 at 17h 09m 01s.xml">
+      <configuration name="UserServiceTest.cleanUsersTable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest - 2020.08.27 at 17h 11m 32s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest - 2020.08.27 at 17h 13m 01s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest - 2020.08.27 at 17h 17m 37s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_getAllUsers - 2020.08.27 at 17h 18m 57s.xml">
+      <configuration name="UserServiceTest.getAllUsers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_saveUser - 2020.08.27 at 17h 21m 27s.xml">
       <configuration name="UserServiceTest.saveUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_dropUsersTable - 2020.08.25 at 16h 01m 18s.xml">
-      <configuration name="UserServiceTest.dropUsersTable" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_saveUser - 2020.08.27 at 17h 23m 46s.xml">
+      <configuration name="UserServiceTest.saveUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2020.08.27 at 15h 27m 51s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_saveUser - 2020.08.27 at 17h 23m 54s.xml">
+      <configuration name="UserServiceTest.saveUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2020.08.27 at 15h 28m 54s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_getAllUsers - 2020.08.27 at 17h 25m 06s.xml">
+      <configuration name="UserServiceTest.getAllUsers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_removeUserById - 2020.08.27 at 15h 46m 01s.xml">
-      <configuration name="UserServiceTest.removeUserById" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2020.08.27 at 15h 46m 05s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2020.08.27 at 16h 04m 20s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest_createUsersTable - 2020.08.27 at 16h 06m 03s.xml">
-      <configuration name="UserServiceTest.createUsersTable" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2020.08.27 at 16h 09m 23s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2020.08.27 at 16h 10m 36s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_getAllUsers - 2020.08.27 at 17h 26m 22s.xml">
+      <configuration name="UserServiceTest.getAllUsers" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42581000" />
+    <option name="totallyTimeSpent" value="47111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31012145" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.31012145" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1079,8 +1048,8 @@
       <window_info id="Persistence" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3291815" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39679715" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39679715" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1161,10 +1130,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java</url>
-          <line>25</line>
+          <url>file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java</url>
+          <line>50</line>
           <properties />
-          <option name="timeStamp" value="37" />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/UserServiceTest.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1176,6 +1151,27 @@
     <expressions id="evaluateExpression">
       <expression>
         <expression-string>String.format(&quot;INSERT INTO users (firstname, lastname ,age) VALUES (%s,%s,%s)&quot;, &quot;'&quot; + name + &quot;'&quot;, &quot;'&quot; + lastName + &quot;'&quot;, &quot;'&quot; + age + &quot;'&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((SessionImpl) session).getActionQueue()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>org.hibernate.internal.SessionImpl</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>session</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>userService.getAllUsers()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>properties</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1196,26 +1192,6 @@
       </expression>
       <expression>
         <expression-string>user</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>userService.getAllUsers().get(1)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>a</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>e</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>con.createStatement()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1281,13 +1257,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hibernate.cfg.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="81" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final.jar!/org/hibernate/cfg/Configuration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1302,20 +1271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final-sources.jar!/org/hibernate/cfg/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="1909" column="58" selection-start-line="1909" selection-start-column="58" selection-end-line="1909" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final-sources.jar!/org/hibernate/SessionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="50" column="2" lean-forward="true" selection-start-line="50" selection-start-column="2" selection-end-line="50" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.7/lib/src.zip!/java.base/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -1324,13 +1279,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/HibernateUtil.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final-sources.jar!/org/hibernate/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1345,91 +1293,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding>
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#927#928#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/UsersEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/UserServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1198">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="71" column="42" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1443,34 +1310,147 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final-sources.jar!/org/hibernate/cfg/SettingsFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="90" column="10" lean-forward="true" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final-sources.jar!/org/hibernate/cfg/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="2055" column="31" selection-start-line="2055" selection-start-column="31" selection-end-line="2055" selection-end-column="31" />
+          <folding>
+            <element signature="e#12886#12887#0" expanded="true" />
+            <element signature="e#12922#12923#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final-sources.jar!/org/hibernate/SessionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="93" selection-start-line="2" selection-start-column="93" selection-end-line="2" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="68" column="25" lean-forward="true" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="75" column="11" lean-forward="true" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final-sources.jar!/org/hibernate/SharedSessionContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.10.Final/hibernate-core-4.3.10.Final-sources.jar!/org/hibernate/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="91" column="41" lean-forward="true" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="27" column="20" selection-start-line="22" selection-start-column="21" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/UsersEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        <state relative-caret-position="138">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="81" column="27" lean-forward="true" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="72" column="19" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="74" selection-end-column="18" />
         </state>
       </provider>
     </entry>

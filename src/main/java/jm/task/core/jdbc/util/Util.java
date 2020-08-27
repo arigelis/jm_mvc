@@ -43,6 +43,18 @@ public class Util {
         }
     }
 
+    public static void getHiberProperties() throws IOException {
+        properties = new Properties();
+        String propFileName = "hibernate.properties";
+        InputStream inputStream = Util.class.getClassLoader().getResourceAsStream(propFileName);
+        if (inputStream != null) {
+            properties.load(inputStream);
+            System.out.println("");
+        } else {
+            throw new FileNotFoundException(propFileName + " not found!");
+        }
+    }
+
     private static SessionFactory sessionFactory = null;
 
     /**
@@ -50,18 +62,23 @@ public class Util {
      *
      * @return the session
      */
-    public static Session openSession() {
+    public static Session openSession(){
+
+        try {
+            getHiberProperties();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 //        if (sessionFactory == null) {
 //            final Configuration configuration = new Configuration();
 //
 //            sessionFactory = configuration.buildSessionFactory( new StandardServiceRegistryBuilder().build() );
 //        }
 //        return sessionFactory.openSession();
-        try {
-            Configuration configuration = new Configuration();
-            configuration.configure();
-            sessionFactory = configuration.buildSessionFactory();
 
+        try {
+            sessionFactory = new Configuration().addProperties(properties).buildSessionFactory();//new Configuration().setProperties(properties);
+//            configuration.configure();
             return sessionFactory.openSession();
         } catch (Throwable ex) {
             throw new ExceptionInInitializerError(ex);

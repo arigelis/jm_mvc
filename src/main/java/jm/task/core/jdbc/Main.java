@@ -37,18 +37,18 @@ public class Main {
 
         // JDBC{
 //        // реализуйте алгоритм здесь
-//        UserService userService = new UserServiceImpl();
-//        //Создание таблицы
-//        userService.createUsersTable();
-//        //Создание леммингов
-//        userService.saveUser("Jhon", "Starsk", (byte) 35);
-//        System.out.println("Jhon добавлен в базу");
-//        userService.saveUser("Steve", "Mius", (byte) 15);
-//        System.out.println("Steve добавлен в базу");
-//        userService.saveUser("Shinie", "Corsa", (byte) 29);
-//        System.out.println("Shinie добавлен в базу");
-//        userService.saveUser("Rick", "Pickles", (byte) 41);
-//        System.out.println("Rick добавлен в базу");
+        UserService userService = new UserServiceImpl();
+        //Создание таблицы
+        userService.createUsersTable();
+        //Создание леммингов
+        userService.saveUser("Jhon", "Starsk", (byte) 35);
+        System.out.println("Jhon добавлен в базу");
+        userService.saveUser("Steve", "Mius", (byte) 15);
+        System.out.println("Steve добавлен в базу");
+        userService.saveUser("Shinie", "Corsa", (byte) 29);
+        System.out.println("Shinie добавлен в базу");
+        userService.saveUser("Rick", "Pickles", (byte) 41);
+        System.out.println("Rick добавлен в базу");
 //
 //        //Вывод на консоль
 //        userService.getAllUsers().stream().forEach(User::toString);

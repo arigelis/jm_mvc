@@ -1,7 +1,6 @@
 package jm.task.core.jdbc.dao;
 
 import jm.task.core.jdbc.model.User;
-import jm.task.core.jdbc.util.UsersEntity;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.Session;
 
@@ -17,15 +16,20 @@ public class UserDaoHibernateImpl implements UserDao {
     public void createUsersTable() {
         Session session = null;
         try {
-            User user = new User();
             session = Util.openSession();
-            session.delete(user);
+            session.createSQLQuery("CREATE TABLE IF NOT EXISTS users (\n" +
+                    "    id INTEGER AUTO_INCREMENT PRIMARY KEY, \n" +
+                    "    firstname VARCHAR(30), \n" +
+                    "    lastname VARCHAR(30), \n" +
+                    "    age INTEGER\n" +
+                    ");");
         } finally {
             if (session != null) {
                 session.close();
             }
         }
     }
+
 
     @Override
     public void dropUsersTable() {
@@ -46,6 +50,8 @@ public class UserDaoHibernateImpl implements UserDao {
         try {
             session = Util.openSession();
             session.createSQLQuery(String.format("INSERT INTO users (firstname, lastname ,age) VALUES (%s,%s,%s)", "'" + name + "'", "'" + lastName + "'", "'" + age + "'"));
+        } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             if (session != null) {
                 session.close();
@@ -57,10 +63,8 @@ public class UserDaoHibernateImpl implements UserDao {
     public void removeUserById(long id) {
         Session session = null;
         try {
-            User user = new User();
-            user.setId(id);
             session = Util.openSession();
-            session.delete(user);
+            session.createSQLQuery(String.format("delete from users where id = " + id));
         } finally {
             if (session != null) {
                 session.close();
@@ -74,8 +78,7 @@ public class UserDaoHibernateImpl implements UserDao {
         Session session = null;
         try {
             session = Util.openSession();
-            //session.createQuery("from UsersEntity");
-            users = session.createCriteria(UsersEntity.class).list();
+            users = session.createCriteria(User.class).list();
         } finally {
             if (session != null) {
                 session.close();
