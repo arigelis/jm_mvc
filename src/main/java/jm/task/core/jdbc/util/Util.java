@@ -51,13 +51,13 @@ public class Util {
      * @return the session
      */
     public static Session openSession() {
-        if (sessionFactory == null) {
-            final Configuration configuration = new Configuration();
-
-            sessionFactory = configuration.buildSessionFactory( new StandardServiceRegistryBuilder().build() );
-        }
-        return sessionFactory.openSession();
-       /* try {
+//        if (sessionFactory == null) {
+//            final Configuration configuration = new Configuration();
+//
+//            sessionFactory = configuration.buildSessionFactory( new StandardServiceRegistryBuilder().build() );
+//        }
+//        return sessionFactory.openSession();
+        try {
             Configuration configuration = new Configuration();
             configuration.configure();
             sessionFactory = configuration.buildSessionFactory();
@@ -65,6 +65,6 @@ public class Util {
             return sessionFactory.openSession();
         } catch (Throwable ex) {
             throw new ExceptionInInitializerError(ex);
-        }*/
+        }
     }
 }
