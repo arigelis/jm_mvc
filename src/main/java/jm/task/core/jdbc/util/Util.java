@@ -1,5 +1,6 @@
 package jm.task.core.jdbc.util;
 
+import jm.task.core.jdbc.model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -43,43 +44,17 @@ public class Util {
         }
     }
 
-    public static void getHiberProperties() throws IOException {
-        properties = new Properties();
-        String propFileName = "hibernate.properties";
-        InputStream inputStream = Util.class.getClassLoader().getResourceAsStream(propFileName);
-        if (inputStream != null) {
-            properties.load(inputStream);
-            System.out.println("");
-        } else {
-            throw new FileNotFoundException(propFileName + " not found!");
-        }
-    }
-
-    private static SessionFactory sessionFactory = null;
-
-    /**
-     * Open session.
-     *
-     * @return the session
-     */
-    public static Session openSession(){
-
+    public static Session openSession() {
         try {
-            getHiberProperties();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-//        if (sessionFactory == null) {
-//            final Configuration configuration = new Configuration();
-//
-//            sessionFactory = configuration.buildSessionFactory( new StandardServiceRegistryBuilder().build() );
-//        }
-//        return sessionFactory.openSession();
-
-        try {
-            sessionFactory = new Configuration().addProperties(properties).buildSessionFactory();//new Configuration().setProperties(properties);
-//            configuration.configure();
-            return sessionFactory.openSession();
+            Configuration configuration = new Configuration();
+            configuration.setProperty("hibernate.connection.url", "jdbc:mysql://127.0.0.1:3306/usersdb?serverTimezone=Europe/Moscow&amp");
+            configuration.setProperty("hibernate.connection.username", "root");
+            configuration.setProperty("hibernate.connection.password", "01v891ea");
+            configuration.setProperty("hibernate.show_sql", "true");
+            configuration.addAnnotatedClass(User.class);
+//            configuration.getClassMapping("jm.task.core.jdbc.model.User");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            return configuration.buildSessionFactory().openSession();
         } catch (Throwable ex) {
             throw new ExceptionInInitializerError(ex);
         }

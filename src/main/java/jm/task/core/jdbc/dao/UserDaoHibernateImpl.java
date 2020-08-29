@@ -22,7 +22,7 @@ public class UserDaoHibernateImpl implements UserDao {
                     "    firstname VARCHAR(30), \n" +
                     "    lastname VARCHAR(30), \n" +
                     "    age INTEGER\n" +
-                    ");");
+                    ");").executeUpdate();
         } finally {
             if (session != null) {
                 session.close();
@@ -36,7 +36,7 @@ public class UserDaoHibernateImpl implements UserDao {
         Session session = null;
         try {
             session = Util.openSession();
-            session.createSQLQuery("DROP TABLE IF EXISTS users");
+            session.createSQLQuery("DROP TABLE IF EXISTS users").executeUpdate();
         } finally {
             if (session != null) {
                 session.close();
@@ -49,9 +49,11 @@ public class UserDaoHibernateImpl implements UserDao {
         Session session = null;
         try {
             session = Util.openSession();
-            session.createSQLQuery(String.format("INSERT INTO users (firstname, lastname ,age) VALUES (%s,%s,%s)", "'" + name + "'", "'" + lastName + "'", "'" + age + "'"));
-        } catch (Exception e) {
-            e.printStackTrace();
+            User user = new User(name, lastName, age);
+            session.beginTransaction();
+            session.save(user);
+            session.getTransaction().commit();
+            session.flush();
         } finally {
             if (session != null) {
                 session.close();
@@ -63,8 +65,10 @@ public class UserDaoHibernateImpl implements UserDao {
     public void removeUserById(long id) {
         Session session = null;
         try {
+            User user = new User();
+            user.setId(id);
             session = Util.openSession();
-            session.createSQLQuery(String.format("delete from users where id = " + id));
+            session.delete(user);
         } finally {
             if (session != null) {
                 session.close();
@@ -78,7 +82,7 @@ public class UserDaoHibernateImpl implements UserDao {
         Session session = null;
         try {
             session = Util.openSession();
-            users = session.createCriteria(User.class).list();
+            users = session.createQuery("from User").list();
         } finally {
             if (session != null) {
                 session.close();
@@ -92,7 +96,7 @@ public class UserDaoHibernateImpl implements UserDao {
         Session session = null;
         try {
             session = Util.openSession();
-            session.createSQLQuery("TRUNCATE TABLE users");
+            session.createSQLQuery("TRUNCATE TABLE users").executeUpdate();
         } finally {
             if (session != null) {
                 session.close();

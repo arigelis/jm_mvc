@@ -35,7 +35,6 @@ public class Main {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-        // JDBC{
 //        // реализуйте алгоритм здесь
         UserService userService = new UserServiceImpl();
         //Создание таблицы
@@ -49,16 +48,7 @@ public class Main {
         System.out.println("Shinie добавлен в базу");
         userService.saveUser("Rick", "Pickles", (byte) 41);
         System.out.println("Rick добавлен в базу");
-//
-//        //Вывод на консоль
-//        userService.getAllUsers().stream().forEach(User::toString);
-//        //Очистка таблицы
-//        userService.cleanUsersTable();
-//        //Удаление таблицы
-//        userService.dropUsersTable();
-        // JDBC}
 
-        // HIBERNATE{
         final Session session = getSession();
         try {
             System.out.println("querying all the managed entities...");
@@ -78,6 +68,5 @@ public class Main {
         UserDaoHibernateImpl dao = new UserDaoHibernateImpl();
         List<User> userList = dao.getAllUsers();
         System.out.println("Users size " + userList.size());
-        // HIBERNATE}
     }
 }

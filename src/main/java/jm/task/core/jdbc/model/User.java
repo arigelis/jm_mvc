@@ -4,13 +4,14 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "users", schema = "usersdb", catalog = "")
+@Table(name = "users", schema = "usersdb")
 public class User {
     @Id
+    @GeneratedValue
     private Long id;
 
     @Column
-    private String name;
+    private String firstname;
 
     @Column
     private String lastName;
@@ -22,8 +23,8 @@ public class User {
 
     }
 
-    @Id
-    @Column(name = "id")
+    //    @Id
+//    @Column(name = "id")
     public Long getId() {
         return id;
     }
@@ -32,18 +33,17 @@ public class User {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "firstname")
+    //    @Column(name = "firstname")
     public String getName() {
-        return name;
+        return firstname;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.firstname = name;
     }
 
-    @Basic
-    @Column(name = "lastname")
+//    @Basic
+//    @Column(name = "lastname")
     public String getLastName() {
         return lastName;
     }
@@ -52,8 +52,8 @@ public class User {
         this.lastName = lastName;
     }
 
-    @Basic
-    @Column(name = "age")
+//    @Basic
+//    @Column(name = "age")
     public Byte getAge() {
         return age;
     }
@@ -62,9 +62,8 @@ public class User {
         this.age = age;
     }
 
-    public User(Long id, String name, String lastName, Byte age) {
-        this.id = id;
-        this.name = name;
+    public User(String name, String lastName, Byte age) {
+        this.firstname = name;
         this.lastName = lastName;
         this.age = age;
     }
@@ -76,6 +75,16 @@ public class User {
         if (!(o instanceof User)) return false;
         User user = (User) o;
         return Objects.equals(id, user.id);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + firstname + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
     }
 
     @Override
